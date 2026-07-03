@@ -1,0 +1,124 @@
+$ git config --global user.name "Victor"
+
+vlopez@Sparky MINGW64 ~
+$ git config --global user.email "narrowblazedelta1@gmail.com"
+
+vlopez@Sparky MINGW64 ~
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Victor
+user.email=narrowblazedelta1@gmail.com
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+
+vlopez@Sparky MINGW64 ~
+$ cd C:\CSC196
+
+vlopez@Sparky MINGW64 /c/CSC196
+$ mkdir GitPractice
+
+vlopez@Sparky MINGW64 /c/CSC196
+$ cd GitPractice
+
+vlopez@Sparky MINGW64 /c/CSC196/GitPractice
+$ git init
+Initialized empty Git repository in C:/CSC196/GitPractice/.git/
+
+vlopez@Sparky MINGW64 /c/CSC196/GitPractice (master)
+$ echo Git Practice Repository > README.md
+
+vlopez@Sparky MINGW64 /c/CSC196/GitPractice (master)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+vlopez@Sparky MINGW64 /c/CSC196/GitPractice (master)
+$ git commit -m "Initial commit"
+[master (root-commit) f2fa66e] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+vlopez@Sparky MINGW64 /c/CSC196/GitPractice (master)
+$ git remote add origin https://github.com/VictorMLjr/GitPractice.git
+
+vlopez@Sparky MINGW64 /c/CSC196/GitPractice (master)
+$ git branch -M main
+
+vlopez@Sparky MINGW64 /c/CSC196/GitPractice (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 242 bytes | 242.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/VictorMLjr/GitPractice.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+vlopez@Sparky MINGW64 /c/CSC196/GitPractice (main)
+$ type nul > main.cpp
+bash: type: nul: not found
+
+vlopez@Sparky MINGW64 /c/CSC196/GitPractice (main)
+$ main.cpp
+bash: main.cpp: command not found
+
+vlopez@Sparky MINGW64 /c/CSC196/GitPractice (main)
+$ create main.cpp
+bash: create: command not found
+
+vlopez@Sparky MINGW64 /c/CSC196/GitPractice (main)
+$ touch main.ccp
+
+vlopez@Sparky MINGW64 /c/CSC196/GitPractice (main)
+$ touch main.cpp
+
+vlopez@Sparky MINGW64 /c/CSC196/GitPractice (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        main.cpp
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+vlopez@Sparky MINGW64 /c/CSC196/GitPractice (main)
+$ git add main.cpp
+
+vlopez@Sparky MINGW64 /c/CSC196/GitPractice (main)
+$ git commit -m "Added main.cpp"
+[main bd0f285] Added main.cpp
+ 1 file changed, 10 insertions(+)
+ create mode 100644 main.cpp
+
+vlopez@Sparky MINGW64 /c/CSC196/GitPractice (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 433 bytes | 433.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/VictorMLjr/GitPractice.git
+   f2fa66e..bd0f285  main -> main
+
+vlopez@Sparky MINGW64 /c/CSC196/GitPractice (main)
+$ touch logs.txt
+
+vlopez@Sparky MINGW64 /c/CSC196/GitPractice (main)
+$
